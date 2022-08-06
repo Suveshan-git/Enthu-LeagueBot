@@ -80,7 +80,12 @@ def fetchRanks(region, encryptedSummonerId):
   return ranks
   
 #Set the bot prefix
-bot = commands.Bot(command_prefix='$')
+bot = commands.Bot(command_prefix='$', help_command=None)
+
+@bot.command(name='help')
+async def help(ctx):
+  embed = discord.Embed(title='HELP', description='Commands available for the EnthuLOL Bot', color=discord.Color.red())
+  await ctx.send(embed=embed)
 
 #gets the player level and icon
 @bot.command()
