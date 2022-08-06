@@ -82,9 +82,11 @@ def fetchRanks(region, encryptedSummonerId):
 #Set the bot prefix
 bot = commands.Bot(command_prefix='$', help_command=None)
 
+#Bot help function
 @bot.command(name='help')
 async def help(ctx):
   embed = discord.Embed(title='HELP', description='Commands available for the EnthuLOL Bot', color=discord.Color.red())
+  embed.add_field(name='Available servers to use', value="`euw1`, `aun1`, `br1`, `jp1`, `kr`, `la1`, `la2`, `na1`, `oc1`, `ru`, `tr1`", inline=False)
   await ctx.send(embed=embed)
 
 #gets the player level and icon
@@ -429,9 +431,6 @@ async def tr1(ctx, *nameWithSpaces):
     embed.add_field(name='Not Found', value='Player is not ranked yet.', inline=False)
     
   await ctx.send(embed=embed)
-
-
-
 
 
 @bot.event
