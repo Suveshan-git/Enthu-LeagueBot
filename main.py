@@ -3,6 +3,7 @@ import os
 import requests
 from discord.ext import commands
 from keep_alive import keep_alive
+import json
 
 #clears the spaces for the name for the API call
 def clearNameSpaces(nameWithSpaces):
@@ -80,13 +81,16 @@ def fetchRanks(region, encryptedSummonerId):
   return ranks
   
 #Set the bot prefix
+    
+
+#Set the bot command prefix and set the default help to None allowing for a custom help function to be created
 bot = commands.Bot(command_prefix='$', help_command=None)
 
 #Bot help function
 @bot.command(name='help')
 async def help(ctx):
   embed = discord.Embed(title='HELP', description='Commands available for the EnthuLOL Bot', color=discord.Color.red())
-  embed.add_field(name='Available servers to use', value="`euw1`, `aun1`, `br1`, `jp1`, `kr`, `la1`, `la2`, `na1`, `oc1`, `ru`, `tr1`", inline=False)
+  embed.add_field(name='Available servers to use', value="`euw1`, `eun1`, `br1`, `jp1`, `kr`, `la1`, `la2`, `na1`, `oc1`, `ru`, `tr1`", inline=False)
   await ctx.send(embed=embed)
 
 #gets the player level and icon
@@ -433,6 +437,24 @@ async def tr1(ctx, *nameWithSpaces):
   await ctx.send(embed=embed)
 
 
+
+@bot.command()
+async def Aatrox(ctx):
+  champ_name = 'Aatrox'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://avatarfiles.alphacoders.com/298/thumb-150-298650.jpg'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+  
+  
 @bot.event
 async def on_ready():
   print('Ready...')
