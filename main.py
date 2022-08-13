@@ -94,6 +94,9 @@ async def help(ctx):
   await ctx.send(embed=embed)
 
 #gets the player level and icon
+
+
+#Commands to fetch player details from all the league regions
 @bot.command()
 async def euw1(ctx, *nameWithSpaces):
   name = clearNameSpaces(nameWithSpaces)
@@ -438,7 +441,9 @@ async def tr1(ctx, *nameWithSpaces):
 
 
 @bot.command()
-async def Aatrox(ctx):
+
+#Commands for champion title, lore and image
+async def aatrox(ctx):
   champ_name = 'Aatrox'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -454,7 +459,7 @@ async def Aatrox(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Ahri(ctx):
+async def ahri(ctx):
   champ_name = 'Ahri'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -470,7 +475,7 @@ async def Ahri(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Akali(ctx):
+async def akali(ctx):
   champ_name = 'Akali'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -486,7 +491,7 @@ async def Akali(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Akshan(ctx):
+async def akshan(ctx):
   champ_name = 'Akshan'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -502,7 +507,7 @@ async def Akshan(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Alistar(ctx):
+async def alistar(ctx):
   champ_name = 'Alistar'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -518,7 +523,7 @@ async def Alistar(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Amumu(ctx):
+async def amumu(ctx):
   champ_name = 'Amumu'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -534,7 +539,7 @@ async def Amumu(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Anivia(ctx):
+async def anivia(ctx):
   champ_name = 'Anivia'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -550,7 +555,7 @@ async def Anivia(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Annie(ctx):
+async def annie(ctx):
   champ_name = 'Annie'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -566,7 +571,7 @@ async def Annie(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Aphelios(ctx):
+async def aphelios(ctx):
   champ_name = 'Aphelios'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -582,7 +587,7 @@ async def Aphelios(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Ashe(ctx):
+async def ashe(ctx):
   champ_name = 'Ashe'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -598,7 +603,7 @@ async def Ashe(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def AurelionSol(ctx):
+async def aurelionsol(ctx):
   champ_name = 'AurelionSol'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -614,7 +619,7 @@ async def AurelionSol(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Azir(ctx):
+async def azir(ctx):
   champ_name = 'Azir'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -630,7 +635,7 @@ async def Azir(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Bard(ctx):
+async def bard(ctx):
   champ_name = 'Bard'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -647,7 +652,7 @@ async def Bard(ctx):
 
 
 @bot.command()
-async def Belveth(ctx):
+async def belveth(ctx):
   champ_name = 'Belveth'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -663,7 +668,7 @@ async def Belveth(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Blitzcrank(ctx):
+async def blitzcrank(ctx):
   champ_name = 'Blitzcrank'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -679,7 +684,7 @@ async def Blitzcrank(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Brand(ctx):
+async def brand(ctx):
   champ_name = 'Brand'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -695,7 +700,7 @@ async def Brand(ctx):
   await ctx.send(embed=embed)
 
 @bot.command()
-async def Braum(ctx):
+async def braum(ctx):
   champ_name = 'Braum'
   API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
 
@@ -705,6 +710,175 @@ async def Braum(ctx):
   title = jsonData['data'][champ_name]['title']
   lore = jsonData['data'][champ_name]['lore']
   image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd140e30fa86d6ddd/5db05fb2242f426df132f95d/RiotX_ChampionList_braum.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def caitlyn(ctx):
+  champ_name = 'Caitlyn'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt014f4b6fc9bacd10/61b1eb901d158d4007de9685/RiotX_ChampionList_caitlyn_v2.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def camille(ctx):
+  champ_name = 'Camille'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt413fcd7681fe0773/5db05fb089fb926b491ed805/RiotX_ChampionList_camille.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def cassiopeia(ctx):
+  champ_name = 'Cassiopeia'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte189be8189da97ea/5db05fb1bd24496c390ae4de/RiotX_ChampionList_cassiopeia.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+@bot.command()
+async def chogath(ctx):
+  champ_name = 'Chogath'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4dfb71de3ddc8166/5db05fb13a326d6df6c0e7ad/RiotX_ChampionList_chogath.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def corki(ctx):
+  champ_name = 'Corki'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd918c4d0a86347a/5db05fb1df78486c826dccee/RiotX_ChampionList_corki.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def darius(ctx):
+  champ_name = 'Darius'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt38b52be4a2cb1004/5db05fb19481396d6bdd01ac/RiotX_ChampionList_darius.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def diana(ctx):
+  champ_name = 'Diana'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt56570083d2a5e20e/5db05fbc823d426762825fdf/RiotX_ChampionList_diana.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def drmundo(ctx):
+  champ_name = 'DrMundo'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte88a3d7e9e408904/61b1ea136a78b87751002a68/RiotX_ChampionList_drmundo_v2.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def draven(ctx):
+  champ_name = 'Draven'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0be728e4cbb8f2a/5db05fbc89fb926b491ed80b/RiotX_ChampionList_draven.jpg?quality=90&width=250'
+  embed = discord.Embed(title=name, description=title, color=0xFFD500)
+  embed.add_field(name='Lore', value=lore)
+  embed.set_thumbnail(url=image)
+  await ctx.send(embed=embed)
+
+
+@bot.command()
+async def ekko(ctx):
+  champ_name = 'Ekko'
+  API_Riot = 'http://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/champion/' + champ_name + '.json'
+
+  response = requests.get(API_Riot)
+  jsonData = response.json()
+  name = jsonData['data'][champ_name]['name']
+  title = jsonData['data'][champ_name]['title']
+  lore = jsonData['data'][champ_name]['lore']
+  image = 'https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf22ba7e6328e4376/5db05fbd242f426df132f963/RiotX_ChampionList_ekko.jpg?quality=90&width=250'
   embed = discord.Embed(title=name, description=title, color=0xFFD500)
   embed.add_field(name='Lore', value=lore)
   embed.set_thumbnail(url=image)
@@ -726,7 +900,12 @@ async def Karthus(ctx):
   embed.add_field(name='Lore', value=lore)
   embed.set_thumbnail(url=image)
   await ctx.send(embed=embed)
+
+
+
+
   
+#Ready status of bot on successful execution
 @bot.event
 async def on_ready():
   print('Ready...')
